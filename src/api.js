@@ -25,7 +25,7 @@ export function listArticles({ status = "", limit = 10, offset = 0 } = {}) {
 export const getArticle = (id) => request(`/article/${id}`);
 
 export const createArticle = (body) =>
-  request("/article/", { method: "POST", body: JSON.stringify(body) });
+  request("/article", { method: "POST", body: JSON.stringify(body) });
 
 export const updateArticle = (id, body) =>
   request(`/article/${id}`, { method: "PUT", body: JSON.stringify(body) });
