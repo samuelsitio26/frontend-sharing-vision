@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/article/:path*", "destination": "http://72.62.127.198/article/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
